@@ -1,0 +1,379 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background: $bgColor;
+   	font-family: $baseFontFamily;
+   	line-height: $baseLineHeight;
+   	font-weight: 400;
+   	color: $baseColor;
+}
+::-moz-selection { /* Code for Firefox */
+    color: $selectionColor;
+    background: $selectionBgColor;
+}
+::selection {
+    color: $selectionColor;
+    background: $selectionBgColor;
+}
+footer,
+header,
+main,
+section,
+article,
+details,
+summary,
+hgroup,
+figure {
+    display: block;
+}
+a {
+    background: transparent;
+    color: $anchorColor;
+
+    &:active, &:hover {
+        outline: 0;
+    }
+    &:hover {
+        color: $anchorHoverColor;
+    }
+    &:visited {
+        color: $anchorVisitedColor;
+    }
+    &:visited:hover {
+        color: $anchorVisitedHoverColor;
+    }
+    &:active {
+        color: $anchorActiveColor;
+    }
+    &.active {
+        position: relative;
+        color: $primaryColor;
+    }
+}
+audio {
+    display: inline-block;
+    vertical-align: baseline;
+}
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+canvas {
+    display: inline-block;
+    vertical-align: baseline;
+}
+pre {
+    overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+    font-family: $codeFontFamily;
+    background-color: #e5e5e5;
+    color: #111;
+}
+code.block-code {
+    padding: $baseLineHeight;
+    display: block;
+}
+p {
+    hyphens: auto;
+    moz-column-fill: balance; // testirati
+}
+p code {
+    display: inline-block;
+    padding: 0 .1em;
+}
+figcaption {
+    line-height: $baseLineHeight;
+    color: #222;
+    display: block;
+    font-size: $baseLineHeight / 2;
+    font-style: italic;
+    margin-bottom: 0;
+    text-align: center;
+}
+h1, .alpha,
+h2, .beta,
+h3, .gamma,
+h4, .delta,
+h5, .epsylon,
+h6, .zeta {
+    font-family: $baseFontFamily;
+    font-weight: bold;
+}
+h1, .alpha {
+    font-variant-ligatures: common-ligatures;
+    font-size: $step5;
+    line-height: $baseLineHeight * 3;
+    margin-top: $baseLineHeight * 4;
+    margin-bottom: $baseLineHeight;
+}
+h2, .beta {
+    font-size: $step4;
+    line-height: $baseLineHeight * 2;
+    margin-top: $baseLineHeight * 2;
+    margin-bottom: $baseLineHeight / 1;
+}
+h3, .gamma {
+    font-size: $step3;
+    line-height: $baseLineHeight * 1.5;
+    margin-top: $baseLineHeight * 2.5;
+    margin-bottom: $baseLineHeight / 2;
+}
+h4, .delta {
+    font-size: $step2;
+    line-height: $baseLineHeight;
+    margin-top: $baseLineHeight * 1.5;
+    margin-bottom: $baseLineHeight / 2;
+}
+h5, .epsylon {
+    font-size: $step1;
+    line-height: $baseLineHeight;
+    margin-top: $baseLineHeight * 2.5;
+    margin-bottom: $baseLineHeight / 2;
+}
+h6, .zeta {
+    font-size: $step1;
+    line-height: $baseLineHeight;
+    margin-top: $baseLineHeight * 2.5;
+    margin-bottom: $baseLineHeight / 2;
+}
+h1 + h2,
+.alpha + .beta {
+    margin-top: $baseLineHeight;
+}
+h2 + h3,
+.beta + .gamma,
+h3 + h4,
+.gamma + .delta,
+h4 + h5,
+.delta + .epsylon {
+    margin-top: $baseLineHeight / 2;
+}
+h5 + h6,
+.epsylon + .zeta {
+    margin-top: 0 - $baseLineHeight / 2;
+}
+
+hr {
+    margin-top: $baseLineHeight * 2;
+    margin-bottom: $baseLineHeight * 2;
+    box-sizing: content-box;
+    border: 0;
+    color: #222;
+    display: block;
+    height: $baseLineHeight;
+    margin-right: auto;
+    margin-left: auto;
+    background-size: 100% $baseLineHeight;
+    background-image: linear-gradient(to bottom, transparent 1px, transparent 11px, $baseColor 11px, $baseColor 15px, transparent 15px, transparent 26px);
+    width: 100px;
+}
+img {
+    border: 0;
+    max-width: 100%;
+    display: block;
+    margin: inherit auto;
+    &.fill {
+        object-fit: fill;
+    }
+    &.contain {
+        object-fit: contain;
+    }
+    &.cover {
+        object-fit: cover;
+    }
+    &.scale-down {
+        object-fit: scale-down;
+    }
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+ul li,
+ol li {
+    margin-bottom: 0;
+}
+li > p,
+li span {
+    margin-bottom: 0;
+}
+/* List Styles */
+
+	ul.in, ol.in				{list-style-position: inside;}
+	ul.out, ol.out				{list-style-position: outside;}
+
+	ul.nostyle 					{list-style-type: none; padding: 0;}
+	ul.square 					{list-style-type: square;}
+	ul.circle 					{list-style-type: circle;}
+	ul.disc 					{list-style-type: disc;}
+
+	ol.upperroman					{list-style-type: upper-roman;}
+	ol.lowroman					{list-style-type: lower-roman;}
+	ol.upperalpha					{list-style-type: upper-alpha;}
+	ol.lowalpha					{list-style-type: lower-alpha;}
+nav {
+    display: block;
+}
+progress {
+    display: inline-block;
+    vertical-align: baseline;
+}
+blockquote {
+    font-style: italic;
+    padding-left: $blockquotePadding;
+    border-left: solid 5px gray;
+    font-size: $step1;
+}
+cite {
+    display: block;
+    font-style: normal;
+}
+figure blockquote {
+    padding: $baseLineHeight 0rem;
+}
+figure blockquote p {
+    font-size: 1.6875rem;
+    line-height: $baseLineHeight * 1.5;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td,
+th {
+    padding: 0;
+}
+[hidden],
+template {
+    display: none;
+}
+br {
+    margin-bottom: 0;
+}
+abbr {
+    letter-spacing: 0.1em;
+}
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+b,
+strong {
+    font-weight: bold;
+}
+dfn {
+    font-style: italic;
+}
+em,
+i {
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+mark {
+    background: $markColor;
+    &.feature {
+        background: purple;
+        color: #fff;
+    }
+    &.todo {
+        // display: inline;
+        background: yellowgreen;
+    }
+    &.review {
+        // display: inline;
+        background: yellow;
+    }
+    &.issue {
+        // display: inline;
+        background: red;
+        color: #fff;
+    }
+    &.proposal {
+        // display: inline;
+        background: cyan;
+    }
+}
+small,
+.small {
+    font-size: $step-1;
+    line-height: 1.45;
+}
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sup {
+    top: -0.5em;
+}
+sub {
+    bottom: -0.25em;
+}
+.lead {
+    font-size: 1.2rem;
+    margin-bottom: $baseLineHeight;
+}
+
+video {
+    display: inline-block;
+    vertical-align: baseline;
+}
+iframe {
+    width: 100%;
+    height: 49vw;
+}
+time {
+    color: $baseColor;
+    font-weight: 700;
+}
+
+.txtl {
+    text-align: left;
+}
+.txtc {
+    text-align: center;
+}
+.txtr {
+    text-align: right;
+}
+.text-justify,
+.text-justify-left ,
+.text-justify-right,
+.text-justify-center {text-align: justify;}
+
+.text-justify-left {
+    -moz-text-align-last: left; /* Firefox */
+    text-align-last: left;
+}
+.text-justify-right {
+    -moz-text-align-last: right; /* Firefox */
+    text-align-last: right;
+}
+.text-justify-center {
+    -moz-text-align-last: center; /* Firefox */
+    text-align-last: center;
+}
+
+
+.bold 						{font-weight: bold;}
+.italic 					{font-style: italic;}
+.smallcaps					{font-variant: small-caps;}
+.uppercase					{text-transform: uppercase;}
+.lowercase					{text-transform: lowercase;}
+
+
+
+
+.avoid-break {
+    break-inside: avoid;
+}
+.word-break {
+    word-break: break-all;
+}

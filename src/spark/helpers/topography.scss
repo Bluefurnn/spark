@@ -1,0 +1,107 @@
+[cr-topography] {
+    --topography-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.6);
+    --topography-dark-color: 0 0 rgba(80, 85, 130, 0.08);
+    --topography-light-color: 0 0 rgba(230, 245, 250, 0.08);
+    --topography-solid-color-0: #111;
+    --topography-solid-color-1: #222;
+    --topography-solid-color-2: #333;
+    --topography-solid-color-3: #444;
+    --topography-solid-color-4: #555;
+    --topography-solid-color-5: #5f5f5f;
+    --topography-solid-color-6: #777;
+    --topography-solid-color-7: #888;
+    --topography-solid-color-8: #999;
+    --topography-solid-color-9: #aaa;
+    --topography-solid-color-10: #bbb;
+    --topography-solid-color-11: #ccc;
+    --topography-solid-color-12: #ddd;
+    --topography-solid-color-13: #eee;
+    --topography-solid-color-14: #fff;
+    --topography-solid-color-15: #f0f;
+}
+/* TOPOGRAPHY */
+[cr-topography="dark"],
+[cr-topography="dark"] > *:not(.dimsapp-wrapper),
+[cr-topography="dark"] > *:not(.dimsapp-wrapper) *,
+[cr-topography="light"],
+[cr-topography="light"] > *:not(.dimsapp-wrapper),
+[cr-topography="light"] > *:not(.dimsapp-wrapper) *,
+[cr-topography="solid"],
+[cr-topography="solid"] > *:not(.dimsapp-wrapper),
+[cr-topography="solid"] > *:not(.dimsapp-wrapper) * {
+    box-shadow: var(--topography-shadow) !important;
+}
+[cr-topography="dark"],
+[cr-topography="dark"] > *:not(.dimsapp-wrapper),
+[cr-topography="dark"] > *:not(.dimsapp-wrapper) * {
+    background: var(--topography-dark-color) !important;
+}
+[cr-topography="light"],
+[cr-topography="light"] > *:not(.dimsapp-wrapper),
+[cr-topography="light"] > *:not(.dimsapp-wrapper) * {
+    background: var(--topography-light-color) !important;
+}
+[cr-topography="solid"] {
+    background-color: var(--topography-solid-color-0) !important;
+    border-color: var(--topography-solid-color-0) !important;
+}
+[cr-topography="solid"] > *:not(.dimsapp-wrapper) {
+        background-color: var(--topography-solid-color-1) !important;
+        border-color: var(--topography-solid-color-1) !important;
+}
+[cr-topography="solid"] > *:not(.dimsapp-wrapper) > * {
+    background-color: var(--topography-solid-color-2) !important;
+    border-color: var(--topography-solid-color-2) !important;
+}
+[cr-topography="solid"] > *:not(.dimsapp-wrapper) > * > * {
+    background-color: var(--topography-solid-color-3) !important;
+    border-color: var(--topography-solid-color-3) !important;
+}
+[cr-topography="solid"] > *:not(.dimsapp-wrapper) > * > * > * {
+    background-color: var(--topography-solid-color-4) !important;
+    border-color: var(--topography-solid-color-4) !important;
+}
+[cr-topography="solid"] > *:not(.dimsapp-wrapper) > * > * > * > * {
+    background-color: var(--topography-solid-color-5) !important;
+    border-color: var(--topography-solid-color-5) !important;
+}
+[cr-topography="solid"] > *:not(.dimsapp-wrapper) > * > * > * > * > * {
+    background-color: var(--topography-solid-color-6) !important;
+    border-color: var(--topography-solid-color-6) !important;
+}
+[cr-topography="solid"] > *:not(.dimsapp-wrapper) > * > * > * > * > * > * {
+    background-color: var(--topography-solid-color-7) !important;
+    border-color: var(--topography-solid-color-7) !important;
+}
+[cr-topography="solid"] > *:not(.dimsapp-wrapper) > * > * > * > * > * > * > * {
+    background-color: var(--topography-solid-color-8) !important;
+    border-color: var(--topography-solid-color-8) !important;
+}
+[cr-topography="solid"] > *:not(.dimsapp-wrapper) > * > * > * > * > * > * > * > * {
+    background-color: var(--topography-solid-color-9) !important;
+    border-color: var(--topography-solid-color-9) !important;
+}
+[cr-topography="solid"] > *:not(.dimsapp-wrapper) > * > * > * > * > * > * > * > * > * {
+    background-color: var(--topography-solid-color-10) !important;
+    border-color: var(--topography-solid-color-10) !important;
+}
+[cr-topography="solid"] > *:not(.dimsapp-wrapper) > * > * > * > * > * > * > * > * > * > * {
+    background-color: var(--topography-solid-color-11) !important;
+    border-color: var(--topography-solid-color-11) !important;
+}
+[cr-topography="solid"] > *:not(.dimsapp-wrapper) > * > * > * > * > * > * > * > * > * > * > * {
+    background-color: var(--topography-solid-color-12) !important;
+    border-color: var(--topography-solid-color-12) !important;
+}
+[cr-topography="solid"] > *:not(.dimsapp-wrapper) > * > * > * > * > * > * > * > * > * > * > * > * {
+    background-color: var(--topography-solid-color-13) !important;
+    border-color: var(--topography-solid-color-13) !important;
+}
+[cr-topography="solid"] > *:not(.dimsapp-wrapper) > * > * > * > * > * > * > * > * > * > * > * > * > * {
+    background-color: var(--topography-solid-color-14) !important;
+    border-color: var(--topography-solid-color-14) !important;
+}
+[cr-topography="solid"] > *:not(.dimsapp-wrapper) > * > * > * > * > * > * > * > * > * > * > * > * > * > * {
+    background-color: var(--topography-solid-color-15) !important;
+    border-color: var(--topography-solid-color-15) !important;
+}

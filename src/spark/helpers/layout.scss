@@ -1,0 +1,43 @@
+// Layout
+.section {
+	padding: 1.5rem 3rem;
+    @media screen and (min-width: 1000px) {
+		padding: 1.5rem 10vw;
+    }
+}
+.hide {
+    display: none;
+}
+.crop {
+    overflow: hidden;
+}
+.padd {
+    padding: 0 4%;
+}
+// .expand {
+//     margin: 0 -4%;
+// }
+.draw {
+    border: solid 1px orange;
+}
+// color helpers?
+.negative {
+    color: #fff;
+    background: #333;
+}
+.block1 {
+    background: green;
+    width: 100vw;
+    height: 100vh;
+}
+.block2 {
+    background: green;
+    width: 100vw;
+    min-height: 100vh;
+}
+.expand {
+    margin: 0 -3rem;
+    @media screen and (min-width: 1000px) {
+        margin: 0 -10vw;
+    }
+}

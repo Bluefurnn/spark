@@ -1,0 +1,58 @@
+// @import url('https://assets.themomentum.io/v1/file-content/9aba051b-868a-42b2-8f08-545f69c287e4%2Ffile%3Acontent%2Fstyles.css%3FchangeToken%3D2-0');
+
+// HELPER
+.column-baseline-grid {
+// DEFINE COLUMN GRID
+--columnCount: 12;
+--columnGap: 1rem; // issue with %
+// COLUMN GRID POSITIONING
+--gridZIndex: 1;
+--gridWidth: 100%; // calc(88% + var(--columnGap) / 2);
+--gridMargin: 0 0;
+// BASELINE / LINE HEIGHT
+--baseline: 1.5rem;
+// COLORS
+--baseColor: rgba(0,0,0,0);
+--baselineColor: rgba(1,255,255,.8);
+--columnColor: rgba(255,0,0,.15);
+
+// ----------------------------------
+// Do NOT Edit
+--columnWidth: calc(100% / var(--columnCount));
+--calcColumnWidth: calc(100% - var(--columnGap));
+}
+
+.column-baseline-grid {
+    position: relative;
+    &::before {
+        box-sizing: border-box;
+        pointer-events: none;
+        margin: var(--gridMargin);
+        content: '';
+        display: block;
+        z-index: var(--gridZIndex);
+        position: absolute;
+        top: 0;
+        left: calc((var(--columnGap) / 2) * -1);
+        left: 0;
+        width: var(--gridWidth);
+        height: 100%;
+        min-height: 200vh;
+        background-position: calc((var(--columnGap) / 2) * -1) 0;
+        background-image:
+        	linear-gradient(
+                  to right,
+                  transparent,
+                  transparent calc(var(--columnGap) / 2),
+                  var(--columnColor) calc(var(--columnGap) / 2),
+                  var(--columnColor) 100%,
+                  transparent 100%
+            ),
+			linear-gradient(
+				to bottom,
+				var(--baseColor) 95%,
+				var(--baselineColor) 100%
+			) !important;
+        background-size: calc(var(--columnWidth)) 100%, 100% var(--baseline);
+    }
+}

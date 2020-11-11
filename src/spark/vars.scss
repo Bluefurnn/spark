@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;900&display=swap');
+
+// Vars
+// 12 blocks responsive model
+$horizontalBPoint1: 600px;
+$horizontalBPoint2: 960px;
+$horizontalBPoint3: 1540px;
+$verticalBPoint1: 331px;
+$verticalBPoint2: 662px;
+
+
+$breakingPoint1: 520px;
+$breakingPoint2: 860px;
+// $breakingPointNav: 1020px;
+
+// $breakingPoint1: 27.5rem;
+// $breakingPoint2: 53.75rem;
+
+$horizontalGridStep: 1.618rem;
+$horizontalGridStepBP1: 5vw;
+$horizontalGridStepBP2: 10vw;
+
+$primaryColor: #e61d33;
+$secondaryColor: #e61d33;
+$markColor: orange;
+
+// Font
+
+$typographyScaleRatio: $perfectFourth;
+
+
+// Settings Vars
+$bgColor: #fbf8f8;
+$baseColor: #333;
+$anchorHoverColor: $primaryColor;
+$anchorColor: #111;
+$anchorActiveColor: $primaryColor;
+$anchorVisitedColor: $anchorColor;
+$anchorVisitedHoverColor: $primaryColor;
+$selectionColor: #fff;
+$selectionBgColor: #333;
+$baseFontFamily: 'Barlow';
+$codeFontFamily: monospace;
+$baseLineHeight: 1.5rem;
+$blockquotePadding: 1.425rem;

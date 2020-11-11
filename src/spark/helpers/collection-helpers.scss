@@ -1,0 +1,43 @@
+// ALL COLLECTIONS
+.collection {
+    @extend .grid;
+
+    &-item {
+    	& > * {
+            @extend .col;
+        }
+        .collection {
+            &-item {
+				@extend .col;
+            }
+        }
+        .view {}
+        .preview {
+            @extend .col;
+            outline: solid 1px #eee;
+            padding: 1rem;
+            h2 {
+                margin-top: 0;
+            }
+        }
+        .teaser {
+            img {
+                width: 50%;
+                margin-right: 1rem;
+            }
+            a {
+            	@extend .row;
+            }
+            h3 {
+                margin: 0;
+            }
+        }
+        .liner {
+            @extend .row;
+            align-items: baseline;
+            a {
+            	@extend .row;
+            }
+        }
+    }
+}

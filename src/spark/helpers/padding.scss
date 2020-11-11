@@ -1,0 +1,71 @@
+// Padding
+.pt {
+    &-0 {
+        padding-top: 0;
+    }
+    &-1 {
+        padding-top: 1 * $baseLineHeight;
+    }
+    &-2 {
+        padding-top: 2 * $baseLineHeight;
+    }
+    &-3 {
+        padding-top: 3 * $baseLineHeight;
+    }
+    &-4 {
+        padding-top: 4 * $baseLineHeight;
+    }
+    &-5 {
+        padding-top: 5 * $baseLineHeight;
+    }
+}
+.pb {
+    &-0 {
+        padding-bottom: 0;
+    }
+    &-1 {
+        padding-bottom: 1 * $baseLineHeight;
+    }
+    &-2 {
+        padding-bottom: 2 * $baseLineHeight;
+    }
+    &-3 {
+        padding-bottom: 3 * $baseLineHeight;
+    }
+    &-4 {
+        padding-bottom: 4 * $baseLineHeight;
+    }
+    &-5 {
+        padding-bottom: 5 * $baseLineHeight;
+    }
+}
+.pl {
+    padding-left: $horizontalGridStep;
+    @media screen and (min-width: $breakingPoint1) {
+        padding-left: $horizontalGridStepBP1;
+    }
+    @media screen and (min-width: $breakingPoint2) {
+        padding-left: $horizontalGridStepBP2;
+    }
+}
+.pr {
+    padding-right: $horizontalGridStep;
+    @media screen and (min-width: $breakingPoint1) {
+        padding-right: $horizontalGridStepBP1;
+    }
+    @media screen and (min-width: $breakingPoint2) {
+        padding-right: $horizontalGridStepBP2;
+    }
+}
+.plr {
+    padding-left: $horizontalGridStep;
+    padding-right: $horizontalGridStep;
+    @media screen and (min-width: $breakingPoint1) {
+        padding-left: $horizontalGridStepBP1;
+        padding-right: $horizontalGridStepBP1;
+    }
+    @media screen and (min-width: $breakingPoint2) {
+        padding-left: $horizontalGridStepBP2;
+        padding-right: $horizontalGridStepBP2;
+    }
+}

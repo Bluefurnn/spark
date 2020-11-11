@@ -1,0 +1,65 @@
+
+// $typographyScaleRatio: $perfectFifth;
+$typographyScaleBaseFontSize: 1rem;
+
+// Scale
+$step0: $typographyScaleBaseFontSize;
+// positive values
+$step1: $step0 * $typographyScaleRatio;
+$step2: $step1 * $typographyScaleRatio;
+$step3: $step2 * $typographyScaleRatio;
+$step4: $step3 * $typographyScaleRatio;
+$step5: $step4 * $typographyScaleRatio;
+$step6: $step5 * $typographyScaleRatio;
+$step7: $step6 * $typographyScaleRatio;
+$step8: $step7 * $typographyScaleRatio;
+$step9: $step8 * $typographyScaleRatio;
+$step10: $step9 * $typographyScaleRatio;
+$step11: $step10 * $typographyScaleRatio;
+$step12: $step11 * $typographyScaleRatio;
+$step13: $step12 * $typographyScaleRatio;
+$step14: $step13 * $typographyScaleRatio;
+$step15: $step14 * $typographyScaleRatio;
+$step16: $step15 * $typographyScaleRatio;
+$step17: $step16 * $typographyScaleRatio;
+$step18: $step17 * $typographyScaleRatio;
+$step19: $step18 * $typographyScaleRatio;
+$step20: $step19 * $typographyScaleRatio;
+// negative values
+$step-1: $step0 / $typographyScaleRatio;
+$step-2: $step-1 / $typographyScaleRatio;
+$step-3: $step-2 / $typographyScaleRatio;
+$step-4: $step-3 / $typographyScaleRatio;
+$step-5: $step-4 / $typographyScaleRatio;
+$step-6: $step-5 / $typographyScaleRatio;
+$step-7: $step-6 / $typographyScaleRatio;
+$step-8: $step-7 / $typographyScaleRatio;
+$step-9: $step-8 / $typographyScaleRatio;
+$step-10: $step-9  / $typographyScaleRatio;
+$step-11: $step-10 / $typographyScaleRatio;
+$step-12: $step-11 / $typographyScaleRatio;
+$step-13: $step-12 / $typographyScaleRatio;
+$step-14: $step-13 / $typographyScaleRatio;
+$step-15: $step-14 / $typographyScaleRatio;
+$step-16: $step-15 / $typographyScaleRatio;
+$step-17: $step-16 / $typographyScaleRatio;
+$step-18: $step-17 / $typographyScaleRatio;
+$step-19: $step-18 / $typographyScaleRatio;
+$step-20: $step-19 / $typographyScaleRatio;
+
+.step10 {font-size: $step10;}
+.step9 {font-size: $step9;}
+.step8 {font-size: $step8;}
+.step7 {font-size: $step7;}
+.step6 {font-size: $step6;}
+.step5 {font-size: $step5;}
+.step4 {font-size: $step4;}
+.step3 {font-size: $step3;}
+.step2 {font-size: $step2;}
+.step1 {font-size: $step1;}
+.step0 {font-size: $step0;}
+.step-1 {font-size: $step-1;}
+.step-2 {font-size: $step-2;}
+.step-3 {font-size: $step-3;}
+.step-4 {font-size: $step-4;}
+.step-5 {font-size: $step-5;}

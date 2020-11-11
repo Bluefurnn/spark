@@ -1,0 +1,97 @@
+
+
+// XX __ __ __
+// __ __ __ __
+// __ __ __ __
+
+body {
+
+}
+
+// XXXXX __ __
+// __ __ __ __
+// __ __ __ __
+
+@media screen and (min-width: $horizontalBPoint1) {
+
+}
+
+// XXXXXXXX __
+// __ __ __ __
+// __ __ __ __
+
+@media screen and (min-width: $horizontalBPoint2) {
+
+}
+
+// XXXXXXXXXXX
+// __ __ __ __
+// __ __ __ __
+
+@media screen and (min-width: $horizontalBPoint3) {
+
+}
+
+// XX __ __ __
+// XX __ __ __
+// __ __ __ __
+
+@media screen and (min-height: $verticalBPoint1) {
+
+}
+
+// XXXXX __ __
+// XXXXX __ __
+// __ __ __ __
+
+@media screen and (min-width: $horizontalBPoint1) and (min-height: $verticalBPoint1) {
+
+}
+
+// XXXXXXXX __
+// XXXXXXXX __
+// __ __ __ __
+
+@media screen and (min-width: $horizontalBPoint2) and (min-height: $verticalBPoint1) {
+
+}
+
+// XXXXXXXXXXX
+// XXXXXXXXXXX
+// __ __ __ __
+
+@media screen and (min-width: $horizontalBPoint3) and (min-height: $verticalBPoint1) {
+
+}
+
+// XX __ __ __
+// XX __ __ __
+// XX __ __ __
+
+@media screen and (min-height: $verticalBPoint2) {
+
+}
+
+// XXXXX __ __
+// XXXXX __ __
+// XXXXX __ __
+
+@media screen and (min-width: $horizontalBPoint1) and (min-height: $verticalBPoint2) {
+
+}
+
+// XXXXXXXX __
+// XXXXXXXX __
+// XXXXXXXX __
+
+@media screen and (min-width: $horizontalBPoint2) and (min-height: $verticalBPoint2) {
+
+}
+
+// XXXXXXXXXXX
+// XXXXXXXXXXX
+// XXXXXXXXXXX
+
+@media screen and (min-width: $horizontalBPoint3) and (min-height: $verticalBPoint2) {
+
+}

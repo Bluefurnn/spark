@@ -1,0 +1,46 @@
+$scrolbarTrackColor: #eee;
+$scrolbarThumbColor: #bbb;
+
+.scrollable {
+  // height: 100%;
+  overflow-x: auto;
+}
+/*IE*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+.scrollable {
+
+        /* ie scrollbar color properties */
+        scrollbar-base-color: $scrolbarTrackColor;
+        scrollbar-face-color: $scrolbarThumbColor;
+        scrollbar-3dlight-color: $scrolbarThumbColor;
+        scrollbar-highlight-color: $scrolbarThumbColor;
+        scrollbar-track-color: $scrolbarTrackColor;
+        scrollbar-arrow-color: $scrolbarThumbColor;
+        scrollbar-shadow-color: $scrolbarThumbColor;
+        scrollbar-dark-shadow-color: $scrolbarThumbColor;
+  }
+}
+/*Edge*/
+@supports (-ms-ime-align:auto)  {
+
+}
+/*Firefox*/
+/*From version 64 - https://drafts.csswg.org/css-scrollbars-1/*/
+.scrollable {
+    scrollbar-width: thin;
+    scrollbar-color: $scrolbarThumbColor $scrolbarTrackColor;
+}
+/*Chrome*/
+.scrollable::-webkit-scrollbar-track {
+    background-color: $scrolbarTrackColor;
+    width: 7px;
+}
+.scrollable::-webkit-scrollbar-thumb {
+    background-color: $scrolbarThumbColor;
+    border: 1px solid transparent;
+    background-clip: content-box;
+}
+.scrollable::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}

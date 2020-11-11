@@ -1,0 +1,116 @@
+// button,
+// .button,
+// input,
+// select,
+// textarea {
+//     font-family: $baseFontFamily;
+//     font-size: $step0;
+// }
+
+input.is-error {
+    outline: solid 2px #ff000085;
+    background-color: #ff000025;
+}
+input.is-valid {
+    outline: solid 2px yellowgreen;
+}
+.button {
+    text-decoration: none;
+}
+button,
+.button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"]{
+    background: #eee;
+    border: solid 1px #aaa;
+    padding: .5rem;
+    // font-size: 1.1rem;
+    cursor: pointer;
+    &:hover {
+        background: #aaa;
+    }
+    &[disabled] {
+        background: #eee;
+        border: solid 1px #aaa;
+        padding: .5rem;
+        cursor: default;
+        pointer-events: none;
+    }
+}
+
+textarea {
+    max-width: 20%;
+}
+
+
+
+$select-arrow: 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4IiB3aWR0aD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE0LjgzIDE2LjQybDkuMTcgOS4xNyA5LjE3LTkuMTcgMi44MyAyLjgzLTEyIDEyLTEyLTEyeiIvPjxwYXRoIGQ9Ik0wLS43NWg0OHY0OGgtNDh6IiBmaWxsPSJub25lIi8+PC9zdmc+';
+$select-padding: .5rem;
+
+select,
+input[type="text"],
+input[type="url"],
+input[type="email"],
+input[type="tel"],
+input[type="search"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="datetime-local"],
+input[type="number"],
+input[type="password"]
+
+{
+    border-radius: 0;
+    -webkit-appearance: none;
+    appearance: none;
+    padding: $select-padding;
+    border: solid 1px #999;
+}
+input[type="number"] {
+    display: inline-block;
+    padding: 0 0 0 $select-padding;
+    line-height: 2.3em;
+    height: 2.5em; // ie11 fix
+}
+input[type="color"] {
+    padding: 0;
+    border: none;
+    line-height: 0;
+}
+input[type="range"] {
+    padding: 0;
+    border: solid 1px #999;
+    background: #999;
+    height: .5rem;
+    -webkit-appearance: none;
+    appearance: none;
+}
+select {
+  border-radius: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  padding: $select-padding 2rem  $select-padding  $select-padding;
+  border: solid 1px #999;
+  // Allows us to use a custom arrow and avoid
+  // the browsers that don't support it.
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    background-image: url(#{$select-arrow});
+    background-position: right 0 top 50%; // better way to background-position
+    background-repeat: no-repeat;
+  }
+}
+label {
+    line-height: 1.9rem;
+    // margin-bottom: .5rem;
+    display: inline-flex;
+    padding-right: .5rem;
+    vertical-align: baseline;
+
+}
+//
+//
+//
+//

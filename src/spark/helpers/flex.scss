@@ -1,0 +1,66 @@
+// Flex
+.flex {
+        display: flex;
+}
+.row {
+    @extend .flex;
+    flex-direction: row;
+    &.cv{
+        align-items: center;
+    }
+    &.ch{
+        justify-content: center;
+    }
+    &-wrap {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+.col {
+    @extend .flex;
+    flex-direction: column;
+    &.cv{
+        justify-content: center;
+    }
+    &.ch{
+        align-items: center;
+    }
+    // sta sa ovim
+    .grow {
+        flex-grow: 1;
+    }
+    .shrink {
+        flex-grow: 0;
+    }
+    // sta sa ovim
+    .grow-0 {
+        flex-grow: 0;
+    }
+    .grow-1 {
+        flex-grow: 1;
+    }
+
+
+}
+.justify {
+    &--start {
+        display: flex;
+        justify-content: flex-start;
+    }
+    &--end {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &--center {
+        display: flex;
+        justify-content: center;
+    }
+    &--around {
+        display: flex;
+        justify-content: space-around;
+    }
+    &--between {
+        display: flex;
+        justify-content: space-between;
+    }
+}

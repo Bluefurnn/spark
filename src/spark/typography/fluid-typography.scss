@@ -1,0 +1,56 @@
+//  Square and reference point explaination needed !!!
+
+// vw - horizontally: fluid, vertically: responsive
+// vh - horizontally: responsive, vertically: fluid
+// vmax - @ portrait :: horizontally: fluid, vertically: responsive // @ landscape :: horizontally: responsive, vertically: fluid
+// vmin - square lock proportional:: vertically: fluid, horizontally: fluid
+$fluidUnit: 0vmin;
+$minFontSize: 14;
+$referenceFontSize: 16;
+$firstBreakingPoint: 460; // asumes value in px
+$referenceBreakingPoint: 900; // asumes value in px
+
+// ===========================================================================
+// adding units, NOT to be changed
+$fluidUnitMode: 100 + $fluidUnit;
+$fluidUnitModeIE: 100 + 0vm;
+$minFontSizePx: $minFontSize + 0px;
+$firstBreakingPointPx: $firstBreakingPoint + 0px;
+
+// Root Em
+html {
+    font-size: $minFontSizePx;
+}
+@media screen and (min-width: $firstBreakingPointPx) and (min-height: $firstBreakingPointPx) {
+    html {
+        font-size: calc(#{$minFontSizePx} + (#{$referenceFontSize} - #{$minFontSize}) * ((#{$fluidUnitModeIE} - #{$firstBreakingPointPx}) / (#{$referenceBreakingPoint} - #{$firstBreakingPoint})));
+        font-size: calc(#{$minFontSizePx} + (#{$referenceFontSize} - #{$minFontSize}) * ((#{$fluidUnitMode} - #{$firstBreakingPointPx}) / (#{$referenceBreakingPoint} - #{$firstBreakingPoint})));
+    }
+}
+
+
+.fluid-minFontSize {
+    &:after {
+        content: "#{$minFontSize}px";
+    }
+}
+.fluid-referenceFontSize {
+    &:after {
+        content: "#{$referenceFontSize}px";
+    }
+}
+.fluid-firstBreakingPoint {
+    &:after {
+        content: "#{$firstBreakingPoint}px";
+    }
+}
+.fluid-referenceBreakingPoint {
+    &:after {
+        content: "#{$referenceBreakingPoint}px";
+    }
+}
+.fluid-typographicScale {
+    &:after {
+        content: "#{$typographyScaleRatio}";
+    }
+}

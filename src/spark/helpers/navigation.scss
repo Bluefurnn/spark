@@ -1,0 +1,20 @@
+// Navigation
+nav {
+    ul {
+        list-style: none;
+        padding: 0;
+        li {
+            display: inline-block;
+            padding: 0;
+            a {
+                display: block;
+                padding: .5rem;
+            }
+        }
+        &.vertical {
+            li {
+                display: block;
+            }
+        }
+    }
+}

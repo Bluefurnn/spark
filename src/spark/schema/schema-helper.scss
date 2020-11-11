@@ -1,0 +1,25 @@
+[itemtype], [itemprop][itemtype], [relation]{
+    // background: #fff;
+    border: solid 2px #0a4;
+    background: rgba(0,0,0,0.2);
+    margin: 4px;
+    padding: 1em;
+}
+ [relation] {
+     border: solid 2px #028aaa;
+	&[cr-inbound] {
+     	border: solid 2px #c46c1e;
+     }
+}
+
+[itemprop]{
+    display: inline-block;
+    padding: 0 1rem;
+    // background: #fff;
+    border: solid 1px #2a2a2a;
+    background: rgba(0,0,0,0.2);
+    margin: 0 0 3px 0;
+}
+[itemprop][itemscope] {
+    margin-top: 1em;
+}
